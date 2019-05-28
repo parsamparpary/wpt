@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <script src="/resources/testharness.js"></script>
 <script src="/resources/testharnessreport.js"></script>
+<meta name="referrer" content="no-referrer">
 <body>
 <script>
 promise_test(async () => {
@@ -18,6 +19,6 @@ promise_test(async () => {
   } finally {
     document.body.removeChild(portal);
   }
-}, "portal contents should be loaded with no referrer");
+}, "portal contents should be loaded with no referrer if document requests it");
 </script>
 </body>
